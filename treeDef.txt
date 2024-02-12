@@ -1,0 +1,2 @@
+0 height < 190.0 1 basketball % root
+1 jump > 50.0 basketball athletics
