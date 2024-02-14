@@ -1,5 +1,5 @@
-CMakeFiles/DecisionTree.dir/main.cpp.obj: \
- C:\Users\tymka\Desktop\Studia\DecisionTreee\main.cpp \
+CMakeFiles/decisionTree.dir/main.cpp.obj: \
+ C:\Users\tymka\Desktop\Studia\dobreDrzewko2\main.cpp \
  C:/msys64/ucrt64/include/c++/13.2.0/string \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -156,4 +156,11 @@ CMakeFiles/DecisionTree.dir/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/13.2.0/sstream \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/sstream.tcc \
  C:/msys64/ucrt64/include/c++/13.2.0/iostream \
- C:\Users\tymka\Desktop\Studia\DecisionTreee\utils.h
+ C:/msys64/ucrt64/include/c++/13.2.0/unordered_set \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/unordered_set.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/hashtable.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/hashtable_policy.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/enable_special_members.h \
+ C:\Users\tymka\Desktop\Studia\dobreDrzewko2\utils.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/utility \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_relops.h

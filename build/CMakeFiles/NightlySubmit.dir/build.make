@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\tymka\Desktop\Studia\DecisionTreee
+CMAKE_SOURCE_DIR = C:\Users\tymka\Desktop\Studia\dobreDrzewko2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\tymka\Desktop\Studia\DecisionTreee\build
+CMAKE_BINARY_DIR = C:\Users\tymka\Desktop\Studia\dobreDrzewko2\build
 
 # Utility rule file for NightlySubmit.
 
@@ -81,6 +81,6 @@ CMakeFiles/NightlySubmit.dir/clean:
 .PHONY : CMakeFiles/NightlySubmit.dir/clean
 
 CMakeFiles/NightlySubmit.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\tymka\Desktop\Studia\DecisionTreee C:\Users\tymka\Desktop\Studia\DecisionTreee C:\Users\tymka\Desktop\Studia\DecisionTreee\build C:\Users\tymka\Desktop\Studia\DecisionTreee\build C:\Users\tymka\Desktop\Studia\DecisionTreee\build\CMakeFiles\NightlySubmit.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\tymka\Desktop\Studia\dobreDrzewko2 C:\Users\tymka\Desktop\Studia\dobreDrzewko2 C:\Users\tymka\Desktop\Studia\dobreDrzewko2\build C:\Users\tymka\Desktop\Studia\dobreDrzewko2\build C:\Users\tymka\Desktop\Studia\dobreDrzewko2\build\CMakeFiles\NightlySubmit.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/NightlySubmit.dir/depend
 

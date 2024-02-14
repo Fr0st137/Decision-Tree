@@ -36,7 +36,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.28/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake"
   "C:/Program Files/CMake/share/cmake-3.28/Templates/CPackConfig.cmake.in"
-  "C:/Users/tymka/Desktop/Studia/DecisionTreee/CMakeLists.txt"
+  "C:/Users/tymka/Desktop/Studia/dobreDrzewko2/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeRCCompiler.cmake"
@@ -87,5 +87,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ContinuousCoverage.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousMemCheck.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake"
-  "CMakeFiles/DecisionTree.dir/DependInfo.cmake"
+  "CMakeFiles/decisionTree.dir/DependInfo.cmake"
   )

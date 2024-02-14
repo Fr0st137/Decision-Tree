@@ -1,20 +1,20 @@
 [
 {
-  "directory": "C:/Users/tymka/Desktop/Studia/DecisionTreee/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\DecisionTree.dir\\main.cpp.obj -c C:\\Users\\tymka\\Desktop\\Studia\\DecisionTreee\\main.cpp",
-  "file": "C:/Users/tymka/Desktop/Studia/DecisionTreee/main.cpp",
-  "output": "CMakeFiles/DecisionTree.dir/main.cpp.obj"
+  "directory": "C:/Users/tymka/Desktop/Studia/dobreDrzewko2/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\decisionTree.dir\\main.cpp.obj -c C:\\Users\\tymka\\Desktop\\Studia\\dobreDrzewko2\\main.cpp",
+  "file": "C:/Users/tymka/Desktop/Studia/dobreDrzewko2/main.cpp",
+  "output": "CMakeFiles/decisionTree.dir/main.cpp.obj"
 },
 {
-  "directory": "C:/Users/tymka/Desktop/Studia/DecisionTreee/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\DecisionTree.dir\\utils.cpp.obj -c C:\\Users\\tymka\\Desktop\\Studia\\DecisionTreee\\utils.cpp",
-  "file": "C:/Users/tymka/Desktop/Studia/DecisionTreee/utils.cpp",
-  "output": "CMakeFiles/DecisionTree.dir/utils.cpp.obj"
+  "directory": "C:/Users/tymka/Desktop/Studia/dobreDrzewko2/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\decisionTree.dir\\utils.cpp.obj -c C:\\Users\\tymka\\Desktop\\Studia\\dobreDrzewko2\\utils.cpp",
+  "file": "C:/Users/tymka/Desktop/Studia/dobreDrzewko2/utils.cpp",
+  "output": "CMakeFiles/decisionTree.dir/utils.cpp.obj"
 },
 {
-  "directory": "C:/Users/tymka/Desktop/Studia/DecisionTreee/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\DecisionTree.dir\\errorMessages.cpp.obj -c C:\\Users\\tymka\\Desktop\\Studia\\DecisionTreee\\errorMessages.cpp",
-  "file": "C:/Users/tymka/Desktop/Studia/DecisionTreee/errorMessages.cpp",
-  "output": "CMakeFiles/DecisionTree.dir/errorMessages.cpp.obj"
+  "directory": "C:/Users/tymka/Desktop/Studia/dobreDrzewko2/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\decisionTree.dir\\errorMessages.cpp.obj -c C:\\Users\\tymka\\Desktop\\Studia\\dobreDrzewko2\\errorMessages.cpp",
+  "file": "C:/Users/tymka/Desktop/Studia/dobreDrzewko2/errorMessages.cpp",
+  "output": "CMakeFiles/decisionTree.dir/errorMessages.cpp.obj"
 }
 ]

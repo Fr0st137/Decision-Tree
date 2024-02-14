@@ -68,17 +68,17 @@ Parameters readInput(int argc, char *argv[])
     return p;
 }
 
-std::vector<std::string> readInputFile(const std::string& inputFileName, std::vector<std::vector<float>>& attributeValues)
+std::vector<std::vector<float>> readInputFile(const std::string& inputFileName)
 {
     std::ifstream inputFile(inputFileName);
 
     if(!inputFile.is_open())
     {
-        std::cerr << "Your input file destination(" << inputFileName << ") is incorrect.\n";
+        std::cerr << "Your input file destination is incorrect.\n";
         exit(EXIT_FAILURE);
     }
 
-    std::vector<std::string> attributes;
+    int n = 0;
     std::string line;
 
     if(std::getline(inputFile, line))
@@ -89,17 +89,18 @@ std::vector<std::string> readInputFile(const std::string& inputFileName, std::ve
         while(iss >> attributeName)
         {
             if(attributeName == "%") break;
-            attributes.push_back(attributeName);        
+            n++;       
         }
     }
 
-    int n = attributes.size();
+    
+    std::vector<std::vector<float>> output;
     int r = 0, c = 0;
 
     while(std::getline(inputFile, line))
     {
         std::istringstream iss(line);
-        std::vector<float> valueSet;
+        std::vector<float> dolgorapojebanaamplituda;
         std::string value;
         while (iss >> value)
         {
@@ -111,7 +112,7 @@ std::vector<std::string> readInputFile(const std::string& inputFileName, std::ve
             }
             if(isNumber(value))
             {
-                valueSet.push_back(std::stof(value));
+                dolgorapojebanaamplituda.push_back(std::stof(value));
             }
             else
             {
@@ -125,14 +126,14 @@ std::vector<std::string> readInputFile(const std::string& inputFileName, std::ve
         }
 
         c = 0;
-        attributeValues.push_back(valueSet);
+        output.push_back(dolgorapojebanaamplituda);
     }
 
     inputFile.close();
-    return attributes;
+    return output;
 }
 
-std::vector<Definition> readDefinition(const std::string& inputFileName)
+std::vector<Definition> readDefinition(const std::string& inputFileName, std::map<std::string, std::vector<std::vector<float>>>& sortedOutput)
 {
     std::ifstream inputFile(inputFileName);
 
@@ -202,6 +203,7 @@ std::vector<Definition> readDefinition(const std::string& inputFileName)
             }
             else
             {
+                sortedOutput.emplace(value, std::vector<std::vector<float>>{});
                 node.falseLabel = value;
                 node.falseIndex = -1;
                 count++;
@@ -216,6 +218,7 @@ std::vector<Definition> readDefinition(const std::string& inputFileName)
             }
             else
             {
+                sortedOutput.emplace(value, std::vector<std::vector<float>>{});
                 node.trueLabel = value;
                 node.trueIndex = -1;
                 count++;
@@ -231,4 +234,99 @@ std::vector<Definition> readDefinition(const std::string& inputFileName)
         }
     }
     return nodes;
+}
+
+void runDecisionTree(const std::vector<Definition>& nodes, const std::vector<std::vector<float>>& output, std::map<std::string, std::vector<std::vector<float>>>& sortedOutput) 
+{
+    for(int i = 0; i < output.size(); i++)
+    {
+        int n = 0;
+        
+        while(true)
+        {
+            if(nodes[n].op == '<')
+            {
+                if(output[i][n] > nodes[n].value)
+                    {
+                    if(nodes[n].trueIndex == -1)
+                    {
+                        sortedOutput[nodes[n].trueLabel].push_back(output[i]);
+                        break;
+                    }
+                    else
+                    {
+                        n = nodes[n].trueIndex;
+                    }
+                }
+                else
+                {
+                    if(nodes[n].falseIndex == -1)
+                    {
+                        sortedOutput[nodes[n].falseLabel].push_back(output[i]);
+                        break;
+                    }
+                    else
+                    {
+                        n = nodes[n].falseIndex;
+                    }
+                }
+            }
+            else
+            {
+                if(output[i][n] < nodes[n].value)
+                {
+                    if(nodes[n].trueIndex == -1)
+                    {
+                        sortedOutput[nodes[n].trueLabel].push_back(output[i]);
+                        break;
+                    }
+                    else
+                    {
+                        n = nodes[n].trueIndex;
+                    }
+                }
+                else
+                {
+                    if(nodes[n].falseIndex == -1)
+                    {
+                        sortedOutput[nodes[n].falseLabel].push_back(output[i]);
+                        break;
+                    }
+                    else
+                    {
+                        n = nodes[n].falseIndex;
+                    }
+                }
+            }
+        }
+    }
+}
+
+void printResults(const std::string& outputFileName, std::map<std::string, std::vector<std::vector<float>>>& sortedOutput)
+{
+    std::ofstream outputFile(outputFileName);
+
+    while(!sortedOutput.empty())
+    {
+        std::string decision = sortedOutput.begin()->first;
+        outputFile << decision << ":\n";
+
+        for(const auto& data : sortedOutput)
+        {
+            if(data.first == decision)
+            {
+                for(int i = 0; i < data.second.size(); i++)
+                {  
+                    for(int j = 0; j < data.second[i].size(); j++)
+                    {
+                        outputFile << data.second[i][j] << " ";
+                    }
+                    outputFile << "\n";
+                }
+                outputFile << "\n";
+            }
+        }
+
+        sortedOutput.erase(decision);
+    }
 }

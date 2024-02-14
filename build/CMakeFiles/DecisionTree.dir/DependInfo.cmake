@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/tymka/Desktop/Studia/DecisionTreee/errorMessages.cpp" "CMakeFiles/DecisionTree.dir/errorMessages.cpp.obj" "gcc" "CMakeFiles/DecisionTree.dir/errorMessages.cpp.obj.d"
-  "C:/Users/tymka/Desktop/Studia/DecisionTreee/main.cpp" "CMakeFiles/DecisionTree.dir/main.cpp.obj" "gcc" "CMakeFiles/DecisionTree.dir/main.cpp.obj.d"
-  "C:/Users/tymka/Desktop/Studia/DecisionTreee/utils.cpp" "CMakeFiles/DecisionTree.dir/utils.cpp.obj" "gcc" "CMakeFiles/DecisionTree.dir/utils.cpp.obj.d"
+  "C:/Users/tymka/Desktop/Studia/dobreDrzewko2/errorMessages.cpp" "CMakeFiles/decisionTree.dir/errorMessages.cpp.obj" "gcc" "CMakeFiles/decisionTree.dir/errorMessages.cpp.obj.d"
+  "C:/Users/tymka/Desktop/Studia/dobreDrzewko2/main.cpp" "CMakeFiles/decisionTree.dir/main.cpp.obj" "gcc" "CMakeFiles/decisionTree.dir/main.cpp.obj.d"
+  "C:/Users/tymka/Desktop/Studia/dobreDrzewko2/utils.cpp" "CMakeFiles/decisionTree.dir/utils.cpp.obj" "gcc" "CMakeFiles/decisionTree.dir/utils.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

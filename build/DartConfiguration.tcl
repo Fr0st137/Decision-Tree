@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: C:/Users/tymka/Desktop/Studia/DecisionTreee
-BuildDirectory: C:/Users/tymka/Desktop/Studia/DecisionTreee/build
+SourceDirectory: C:/Users/tymka/Desktop/Studia/dobreDrzewko2
+BuildDirectory: C:/Users/tymka/Desktop/Studia/dobreDrzewko2/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "C:/Program Files/CMake/bin/cmake.exe" "C:/Users/tymka/Desktop/Studia/DecisionTreee"
+ConfigureCommand: "C:/Program Files/CMake/bin/cmake.exe" "C:/Users/tymka/Desktop/Studia/dobreDrzewko2"
 MakeCommand: C:/Program\ Files/CMake/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 

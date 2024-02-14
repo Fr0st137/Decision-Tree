@@ -56,10 +56,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\tymka\Desktop\Studia\DecisionTreee
+CMAKE_SOURCE_DIR = C:\Users\tymka\Desktop\Studia\dobreDrzewko2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\tymka\Desktop\Studia\DecisionTreee\build
+CMAKE_BINARY_DIR = C:\Users\tymka\Desktop\Studia\dobreDrzewko2\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,7 +77,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	"C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/tymka/Desktop/Studia/DecisionTreee/build/CPackSourceConfig.cmake
+	"C:\Program Files\CMake\bin\cpack.exe" --config ./CPackSourceConfig.cmake C:/Users/tymka/Desktop/Studia/dobreDrzewko2/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -116,9 +116,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tymka\Desktop\Studia\DecisionTreee\build\CMakeFiles C:\Users\tymka\Desktop\Studia\DecisionTreee\build\\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tymka\Desktop\Studia\dobreDrzewko2\build\CMakeFiles C:\Users\tymka\Desktop\Studia\dobreDrzewko2\build\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tymka\Desktop\Studia\DecisionTreee\build\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\tymka\Desktop\Studia\dobreDrzewko2\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -510,24 +510,24 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named DecisionTree
+# Target rules for targets named decisionTree
 
 # Build rule for target.
-DecisionTree: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DecisionTree
-.PHONY : DecisionTree
+decisionTree: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 decisionTree
+.PHONY : decisionTree
 
 # fast build rule for target.
-DecisionTree/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DecisionTree.dir\build.make CMakeFiles/DecisionTree.dir/build
-.PHONY : DecisionTree/fast
+decisionTree/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\decisionTree.dir\build.make CMakeFiles/decisionTree.dir/build
+.PHONY : decisionTree/fast
 
 errorMessages.obj: errorMessages.cpp.obj
 .PHONY : errorMessages.obj
 
 # target to build an object file
 errorMessages.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DecisionTree.dir\build.make CMakeFiles/DecisionTree.dir/errorMessages.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\decisionTree.dir\build.make CMakeFiles/decisionTree.dir/errorMessages.cpp.obj
 .PHONY : errorMessages.cpp.obj
 
 errorMessages.i: errorMessages.cpp.i
@@ -535,7 +535,7 @@ errorMessages.i: errorMessages.cpp.i
 
 # target to preprocess a source file
 errorMessages.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DecisionTree.dir\build.make CMakeFiles/DecisionTree.dir/errorMessages.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\decisionTree.dir\build.make CMakeFiles/decisionTree.dir/errorMessages.cpp.i
 .PHONY : errorMessages.cpp.i
 
 errorMessages.s: errorMessages.cpp.s
@@ -543,7 +543,7 @@ errorMessages.s: errorMessages.cpp.s
 
 # target to generate assembly for a file
 errorMessages.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DecisionTree.dir\build.make CMakeFiles/DecisionTree.dir/errorMessages.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\decisionTree.dir\build.make CMakeFiles/decisionTree.dir/errorMessages.cpp.s
 .PHONY : errorMessages.cpp.s
 
 main.obj: main.cpp.obj
@@ -551,7 +551,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DecisionTree.dir\build.make CMakeFiles/DecisionTree.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\decisionTree.dir\build.make CMakeFiles/decisionTree.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -559,7 +559,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DecisionTree.dir\build.make CMakeFiles/DecisionTree.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\decisionTree.dir\build.make CMakeFiles/decisionTree.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -567,7 +567,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DecisionTree.dir\build.make CMakeFiles/DecisionTree.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\decisionTree.dir\build.make CMakeFiles/decisionTree.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 utils.obj: utils.cpp.obj
@@ -575,7 +575,7 @@ utils.obj: utils.cpp.obj
 
 # target to build an object file
 utils.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DecisionTree.dir\build.make CMakeFiles/DecisionTree.dir/utils.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\decisionTree.dir\build.make CMakeFiles/decisionTree.dir/utils.cpp.obj
 .PHONY : utils.cpp.obj
 
 utils.i: utils.cpp.i
@@ -583,7 +583,7 @@ utils.i: utils.cpp.i
 
 # target to preprocess a source file
 utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DecisionTree.dir\build.make CMakeFiles/DecisionTree.dir/utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\decisionTree.dir\build.make CMakeFiles/decisionTree.dir/utils.cpp.i
 .PHONY : utils.cpp.i
 
 utils.s: utils.cpp.s
@@ -591,7 +591,7 @@ utils.s: utils.cpp.s
 
 # target to generate assembly for a file
 utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DecisionTree.dir\build.make CMakeFiles/DecisionTree.dir/utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\decisionTree.dir\build.make CMakeFiles/decisionTree.dir/utils.cpp.s
 .PHONY : utils.cpp.s
 
 # Help Target
@@ -633,7 +633,7 @@ help:
 	@echo ... NightlySubmit
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
-	@echo ... DecisionTree
+	@echo ... decisionTree
 	@echo ... errorMessages.obj
 	@echo ... errorMessages.i
 	@echo ... errorMessages.s

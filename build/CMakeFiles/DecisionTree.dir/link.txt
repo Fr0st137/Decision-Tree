@@ -1,3 +1,3 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\DecisionTree.dir/objects.a
-C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\DecisionTree.dir/objects.a @CMakeFiles\DecisionTree.dir\objects1.rsp
-C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\DecisionTree.dir/objects.a -Wl,--no-whole-archive -o DecisionTree.exe -Wl,--out-implib,libDecisionTree.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\DecisionTree.dir\linkLibs.rsp
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\decisionTree.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\decisionTree.dir/objects.a @CMakeFiles\decisionTree.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\decisionTree.dir/objects.a -Wl,--no-whole-archive -o decisionTree.exe -Wl,--out-implib,libdecisionTree.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\decisionTree.dir\linkLibs.rsp

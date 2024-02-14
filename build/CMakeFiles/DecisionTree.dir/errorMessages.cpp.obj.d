@@ -1,6 +1,6 @@
-CMakeFiles/DecisionTree.dir/errorMessages.cpp.obj: \
- C:\Users\tymka\Desktop\Studia\DecisionTreee\errorMessages.cpp \
- C:\Users\tymka\Desktop\Studia\DecisionTreee\errorMessages.h \
+CMakeFiles/decisionTree.dir/errorMessages.cpp.obj: \
+ C:\Users\tymka\Desktop\Studia\dobreDrzewko2\errorMessages.cpp \
+ C:\Users\tymka\Desktop\Studia\dobreDrzewko2\errorMessages.h \
  C:/msys64/ucrt64/include/c++/13.2.0/string \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++config.h \
